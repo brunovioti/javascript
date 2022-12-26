@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polícia Federal</title>
+</head>
+<body>
+    <h1>Sistema de Identificação de Nacionalidade</h1>
+    <p>Digite aqui o seu país de origem:</p>
+    <input type="text" name="txtnaci" id="txtnaci">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var pais = 'Brasil'
+            var txtnaci = window.document.getElementById('txtnaci')
+            var naci = String (txtnaci.value)
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>Você vive em <strong>${naci}</strong>!</p>`
+            if (naci == pais) {
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong>, seja bem vindo ao lar.</p>`
+            } else res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>, seja bem vindo ao Brasil.</p>`
+        }   
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(59, 137, 221);
+            color: white;
+            width: 400px;
+            height: 200;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Severino existe?!
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Feliz Aniversário!!'
+            a.style.background = 'rgb(221, 191, 59)'
+        }
+        function entrar (){
+            a.innerText = 'Clique para ver a surpresa...'
+        }
+        function sair (){
+            a.innerText = 'Severino existe?!'
+            a.style.background = 'rgb(59, 137, 221)'
+        }
+    </script>
+</body>
+</html>

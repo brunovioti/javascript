@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var chegadaPortugueses = 1500;
+    var mediaIdadeReproducao = 28;
+    var primeiraGeracao = chegadaPortugueses + mediaIdadeReproducao;
+    var segundaGeracao = chegadaPortugueses + 2 * mediaIdadeReproducao;
+    var anoAtual = 2022;
+    var geracaoDeBrasileiros = (anoAtual - chegadaPortugueses) / mediaIdadeReproducao;
+
+    mostra("A chegada dos Portugueses ao Brasil ocorreu em " + chegadaPortugueses + ".");
+    mostra("A idade média de reprodução de um casal é " + mediaIdadeReproducao + ".");
+    mostra("Portanto a primeira geração de brasileiros nasceu em " + primeiraGeracao + "e a segunda geração em " + segundaGeracao + ".");
+    mostra("E até o ano de " + anoAtual + " nasceram " + geracaoDeBrasileiros + " gerações de brasileiros.");
+</script>
